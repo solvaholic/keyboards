@@ -5,12 +5,15 @@ I'm using [QMK firmware](https://github.com/qmk/qmk_firmware) on an Iris rev4, a
 
 The volume knob requires [some configuration](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_encoders.md) that doesn't just go in the .json file, so here we are.
 
+## Iris rev6
+I'm also using [QMK firmware](https://github.com/qmk/qmk_firmware) on an Iris rev6 without a volume knob.
+
 ## QMK Configurator
 ![image](https://user-images.githubusercontent.com/14636658/120260904-c9050680-c264-11eb-9a95-bea6417f37bc.png)
 
 This is available online at <https://config.qmk.fm>. To spare the project some hosting and compute costs, consider running it in a Docker container locally.
 
-If you want to run the configurator on your computer at <http://localhost:8080>, run this command:
+If you want to run the configurator on your computer at <http://localhost:8888>, run this command:
 
 ```bash
 docker run --detach --rm --publish 8888:80 qmkfm/qmk_configurator:latest
@@ -19,7 +22,7 @@ docker run --detach --rm --publish 8888:80 qmkfm/qmk_configurator:latest
 If you want to run the configurator on a server nearby, you could do something like:
 
 ```bash
-docker --host ssh://nas run --detach --rm --publish 8888:80 qmkfm/qmk_configurator:latest
+DOCKER_HOST=ssh://nas docker run --detach --rm --publish 8888:80 qmkfm/qmk_configurator:latest
 ```
 
 Remember to clean up after yourself: Use `docker stop` to stop and remove containers when you're done with them.
