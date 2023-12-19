@@ -8,10 +8,28 @@ The volume knob requires [some configuration](https://github.com/qmk/qmk_firmwar
 ## Iris rev6
 I'm also using [QMK firmware](https://github.com/qmk/qmk_firmware) on an Iris rev6 without a volume knob.
 
-## QMK Configurator
-![image](https://user-images.githubusercontent.com/14636658/120260904-c9050680-c264-11eb-9a95-bea6417f37bc.png)
+### Layer 0
 
-This is available online at <https://config.qmk.fm>. To spare the project some hosting and compute costs, consider running it in a Docker container locally.
+![layer0](https://github.com/solvaholic/keyboards/assets/14636658/bc75c453-5644-4d73-9153-7c89dde32a34)
+
+<details><summary>Expand to see layers 1, 2, and 4</summary>
+<p>
+  
+### Layer 1
+![layer1](https://github.com/solvaholic/keyboards/assets/14636658/2a24fd9f-c8e6-4209-a7bf-95616d7f0abb)
+
+### Layer 2
+![layer2](https://github.com/solvaholic/keyboards/assets/14636658/f0b46c71-d700-4bcb-b808-65d7056736bf)
+
+### Layer 4
+![layer4](https://github.com/solvaholic/keyboards/assets/14636658/0d2a0bb0-bc5f-4f18-9e7c-04927a0d0f0c)
+
+</p>
+</details>
+
+## QMK Configurator
+
+QMK Configurator available online at <https://config.qmk.fm>. To spare the project some hosting and compute costs, consider running it in a Docker container locally.
 
 If you want to run the configurator on your computer at <http://localhost:8888>, run this command:
 
